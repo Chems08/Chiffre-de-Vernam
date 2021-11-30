@@ -1,9 +1,4 @@
 
-# L'algorithme doit respecter les conditions suivantes : 
-
-#   - le mot choisit ne doit pas excéder 5 lettres
-#   - le nombre pour la clé d'une lettre ne doit pas excéder 67
-
 
 # Testé avec le mot 'hello' et la clé de chiffrement : [1 10 2 15 3] et l'alphabet dans l'ordre : 
 # --> Résultat attendu : 'ionar'
