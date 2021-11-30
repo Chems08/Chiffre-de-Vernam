@@ -1,14 +1,31 @@
 
+# L'algorithme doit respecter les conditions suivantes : 
 
-# Testé avec le mot 'hello' et la clé de chiffrement : [1 10 2 15 3] et l'alphabet dans l'ordre : 
+#   - le nombre pour la clé d'une lettre ne doit pas excéder 67
+
+
+# Testé avec le mot 'hello' et la clé de chiffrement : [1 10 2 15 3]
 # --> Résultat attendu : 'ionar'
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Pb de l'algorithme :
+
+#   - impossibilité de choisir la taille du mot et de la clé par conséquent (5 lettres requises)
+#   - impossibilité d'excéder un certain nombre pour la clé d'une lettre (max 52)  
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 import random
 # 2 fois l'alphabet avec caractères
 
-k = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","0","1","2","3","4","5","6","7","8","9","@","&","!","-","#","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","0","1","2","3","4","5","6","7","8","9","@","&","!","-","#"]
+k = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
+"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
+"0","1","2","3","4","5","6","7","8","9","@","&","!","-","#",
+"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
+"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
+"0","1","2","3","4","5","6","7","8","9","@","&","!","-","#"]
+
 i = "".join(random.sample(k, len(k)))
 print("L'alphabet de chiffrement est :", i)
 
