@@ -11,8 +11,7 @@
 
 # Pb de l'algorithme :
 
-#   - impossibilité de choisir la taille du mot et de la clé par conséquent (5 lettres requises)
-#   - impossibilité d'excéder un certain nombre pour la clé d'une lettre (max 52)  
+#   - impossibilité d'excéder un certain nombre pour la clé d'une lettre (max 67)  
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
