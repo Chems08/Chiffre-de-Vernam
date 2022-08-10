@@ -115,3 +115,4 @@ Label05 = tk.Label(window, text = "").pack()
 
 window.mainloop()
 
+
