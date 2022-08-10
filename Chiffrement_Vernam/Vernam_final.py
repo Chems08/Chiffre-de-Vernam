@@ -12,34 +12,33 @@ window.geometry("500x250")
 frame = Frame(window)
 frame.pack()
 
-def click():
-    if str(radio.get()) == "1":
+
+# Definit deux fonctions pour que les bouttons apparaissent
+
+def selection1():
         print("Chiffrer")
         call(["python3", './Vernam.py'])
-        exit()
+#        exit()
 
-    elif str(radio.get()) == "2":
+def selection2():
         print("Déchiffrer")
         call(["python3", './gui_vernam_reverse.py'])
-        exit()
+#        exit()
 
-# Definit une fonction pour que le boutton apparaisse
-
-def selection():
-    bt = tk.Button(window, text = "Enter", command = click)
-    bt.pack(padx = 5, pady = 10)
 
 radio = IntVar()
 Label(text="").pack()
 Label(text="Que souhaites-tu faire ?", font=('Aerial 20')).pack()
 Label(text="").pack()
 
-# Definit des radiobutton pour chaque option
+# Definit des bouttons pour chaque option
 
-r1 = Radiobutton(window, text="Chiffrer", variable=radio, value=1, command=selection)
+r1 = tk.Button(window, text="Chiffrer", command=selection1)
 r1.pack(anchor=N)
 
-r2 = Radiobutton(window, text="Déchiffrer", variable=radio, value=2, command=selection)
+Label(text="").pack()
+
+r2 = tk.Button(window, text="Déchiffrer", command=selection2)
 r2.pack(anchor=N)
 
 
